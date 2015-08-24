@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    padding: 25px 50px;
+}
+
+a {
+    color: #22BAD9;
+}
+
+a:hover {
+    color: #fff;
+    background: #22BAD9;
+    text-decoration: none;
+}
+
+#logo {
+    padding-bottom: 50px;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+#home {
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 400px;
+}
+
+#home .inner {
+    height: 130px;
+    width: 320px;
+    text-align: center;
+}
+
+#home h1 {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#home .links {
+    font-size: 11px;
+}
+
+#home .links a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#posts .posts-post .date {
+    color: #999;
+    display: inline-block;
+    width: 150px;
+    margin-right: 50px;
+    text-align: right;
+}
+
+#posts .posts-post .date-short {
+    display: none;
+}
+
+#posts .posts-post {
+    margin-bottom: 10px;
+}
+
+#posts .posts-post a {
+    text-decoration: none;
+}
+
+article {
+    max-width: 650px;
+    margin: auto;
+    font-size: 14px;
+}
+
+article h1 {
+    font: 18px Helvetica Neue, Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+article h1 a {
+    color: #FF001F;
+    text-decoration: none;
+}
+
+article h1 a:hover {
+    background-color: #FF001F;
+    color: #fff;
+}
+
+article h2 {
+    font: 16px Helvetica Neue, Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+article blockquote {
+    color: #9B9B9B;
+    margin: 30px 0 25px 0px;
+    font-style: oblique;
+    font-size: 12px;
+}
+
+article blockquote:first-child {
+    margin-bottom: 30px;
+}
+
+article blockquote strong {
+    color: #D0021B;
+    font-style: oblique;
+}
+
+article ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+article ol {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+article ol li {
+    list-style-position: inside;
+    margin-bottom: 5px;
+    line-height: 24px;
+}
+
+article ul li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    line-height: 24px;
+}
+
+article ul li:before {
+    content: '-';
+    color: #ABABAB;
+    position: absolute;
+    margin-left: -20px;
+}
+
+.entry-meta {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.entry-meta .left {
+    color: #9B9B9B;
+    float: left;
+}
+
+.entry-meta .right {
+    float: right;
+    display: none;
+}
+
+.entry-meta .right a {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.entry-meta .right:before {
+    display: inline-block;
+    content: '↓';
+    color: #000;
+}
+
+article p {
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+article img {
+    max-width: 90%;
+    display: block;
+    margin: 50px auto;
+}
+
+article code {
+    color: #999;
+}
+
+article pre {
+    line-height: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+article .alt {
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    font-style: oblique;
+    display: block;
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+
+article .tldr {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #eee;
+    line-height: 20px;
+}
+
+article h2, article h3 {
+    margin-left: -14px;
+}
+
+article h2 a, article h3 a {
+    visibility: hidden;
+}
+
+article h2:hover a, article h3:hover a {
+    visibility: visible;
+}
+
+article h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+article .views.highlight {
+    background: yellow;
+    -webkit-animation: highlight 500ms;
+    animation: highlight 500ms;
+}
+
+.footnote-link {
+    font-size: 10px;
+    text-decoration: none;
+    position: relative;
+    top: -5px;
+}
+
+.footnotes:before {
+    width: 200px;
+    content: ' ';
+    margin: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 40px;
+    display: block;
+    margin-top: 40px;
+}
+
+.footnotes .footnote-ref {
+    text-decoration: none;
+}
+
+@-webkit-keyframes highlight {
+    from {
+        background: yellow;
+    }
+    to {
+        background: #fff;
+    }
+}
+
+@keyframes mymove {
+    from {
+        background: yellow;
+    }
+    to {
+        background: #fff;
+    }
+}
+
+@media only screen
+and (max-width: 500px) {
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #posts .posts-post .date {
+        width: 70px;
+        margin-right: 10px;
+    }
+
+    #posts .posts-post .date-long {
+        display: none;
+    }
+
+    #posts .posts-post .date-short {
+        display: inline;
+    }
+}
+
+hr {
+    border-style: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+hr::after {
+    content: '***';
+    text-align: center;
+    display: inline;
+}
+
+article .wide-image {
+    margin: 20px 0;
+}
+
+article .wide-image img {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+article .wide-image .wide-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #F2F2F2;
+    padding: 10px 0;
+}
+
+#viewer-thumbs-wrap {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 232px;
+}
+
+#viewer-thumbs {
+    background: #F2F2F2;
+    right: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+}
+
+#viewer-thumbs .t, #viewer-thumbs .option {
+    text-align: left;
+}
+
+#viewer-thumbs .board {
+    margin: 10px;
+    vertical-align: top;
+}
+
+#viewer-thumbs .category > .t {
+    display: none;
+}
+
+#viewer-thumbs .board:last-child {
+    margin-right: 0;
+}
+
+#viewer-conversion {
+    width: 600px;
+    margin: auto;
+    padding: 20px 20px 0;
+}
+
+@media only screen
+and (max-width: 500px) {
+    #viewer-conversion {
+        width: 100%;
+    }
+}
+
+#viewer-thumbs::before {
+    content: 'Hint: click [+] to edit!';
+    font-size: 11px;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    color: #ccc;
+}
+
+#viewer-conversion .category > .t {
+    display: none;
+}
