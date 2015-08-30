@@ -1,0 +1,24 @@
+{
+  "name": "my-website-is-comming-soon",
+  "version": "1.0.0",
+  "description": "demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-tutorials/my-website-is-comming-soon.git"
+  },
+  "author": "ducito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web-tutorials/my-website-is-comming-soon/issues"
+  },
+  "homepage": "https://github.com/web-tutorials/my-website-is-comming-soon#readme",
+  "dependencies": {
+    "angular": "^1.4.5",
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4"
+  }
+}
